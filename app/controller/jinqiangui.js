@@ -26,7 +26,9 @@ module.exports = app => {
     }
     async payInfo() {
       const validate = new Date() < new Date('2017-07-12');
-      this.ctx.
+      this.ctx.body = {
+        data: validate,
+      };
     }
   }
   return JinQianguiController;
