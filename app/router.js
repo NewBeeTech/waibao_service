@@ -2,6 +2,6 @@
 
 module.exports = app => {
   app.get('/api/jinqiangui/qq', 'jinqiangui.index');
-  app.put('/api/jinqiangui/qq/:qq', 'jinqiangui.update');
+  app.post('/api/jinqiangui/qq/:qq', 'jinqiangui.update');
   app.get('/api/jinqiangui/pay-info', 'jinqiangui.payInfo');
 };
